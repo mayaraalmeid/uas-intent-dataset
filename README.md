@@ -10,10 +10,10 @@ Os dados simulam operações de gestão de tráfego aéreo urbano (UTM) sobre a 
 
 O dataset foi produzido a partir da combinação de dois conjuntos de dados:
 
-1. **Mensagens do GP de Fórmula 1 em Interlagos** — comunicações de rádio entre pilotos e equipes durante o Grande Prêmio de Interlagos, utilizadas como base para os padrões linguísticos e estrutura das mensagens de voz/texto entre aeronaves e controle.
+1. **Mensagens do GP de Fórmula 1 em Interlagos** — comunicações via whatsapp entre pilotos e equipes durante o Grande Prêmio de Interlagos, utilizadas como base para os padrões linguísticos e estrutura das mensagens de texto entre aeronaves e controle.
 2. **LADE (Logistics and Delivery dataset)** — dataset de logística urbana da China, utilizado para fornecer as coordenadas geográficas, rotas e padrões de tráfego na região de Xangai.
 
-A partir desses dois conjuntos, foram geradas mensagens de rádio realistas entre aeronaves e o controle, rotuladas manualmente e semi-automaticamente com intenções de comunicação.
+A partir desses dois conjuntos, foram geradas mensagens de texto realistas entre pilotos de aeronaves e o controle, rotuladas manualmente e semi-automaticamente com intenções de comunicação.
 
 ## Estrutura
 
@@ -47,14 +47,14 @@ prompts/
 |----------|------------------------------------|
 | `I1`     | Solicitação de decolagem/partida   |
 | `I2`     | Autorização de decolagem           |
-| `I3`     | Reporte de status em voo           |
+| `I3`     | Reporte de status de voo           |
 | `I4`     | Solicitação de pouso               |
 | `I5`     | Autorização de pouso               |
 | `I6`     | Alerta / aviso de conflito         |
 | `I7`     | Atualização de posição/rota        |
-| `I8`     | Encerramento de missão             |
+| `I8`     | Pausa na missão             |
 | `outros` | Comunicações sem intenção definida |
 
 ## Localização
 
-Os voos cobrem a área urbana de Xangai, incluindo regiões de alta densidade como Pudong e Puxi.
+Os voos cobrem a área urbana de Xangai.
